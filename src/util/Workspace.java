@@ -1,5 +1,11 @@
 package util;
 
+import java.util.AbstractMap;
+import java.util.Collection;
+
+import data.structure.Record;
+import data.structure.Subject;
+
 /**
  * Class which contains necessary values across project
  * 
@@ -7,6 +13,8 @@ package util;
  */
 public class Workspace {
 	private static Workspace instance;
+	
+	AbstractMap<Subject, Collection<Record>> listOfRecords;
 	
 	/**
 	 * Init values for {@link Workspace}
